@@ -1,10 +1,18 @@
 import { useState } from 'react'
 import Fruits from './components/Druits'
 import Employees from './components/Employees'
+import Hello from './components/Hello'
 
 function App() {
   const [count, setCount] = useState(0)
   const [count1, setCount1] = useState(0)
+
+  const person = {
+    name: 'Rob',
+    message: 'Hi there',
+    emoji: '👋',
+    seatNumbers: [1, 4, 7],
+  }
 
   return (
     <div className="App">
@@ -23,6 +31,8 @@ function App() {
       <Fruits />
       <hr />
       <Employees />
+      <hr />
+      <Hello person={person} />
     </div>
   )
 }
