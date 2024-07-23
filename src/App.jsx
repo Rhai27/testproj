@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Fruits from './components/fruits'
+import Fruits from './components/Druits'
 
 function App() {
   const [count, setCount] = useState(0)
