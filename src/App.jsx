@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Fruits from './components/Druits'
 import Employees from './components/Employees'
 import Hello from './components/Hello'
+import Form from './components/Form'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +34,8 @@ function App() {
       <Employees />
       <hr />
       <Hello person={person} />
+      <hr />
+      <Form />
     </div>
   )
 }
