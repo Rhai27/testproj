@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Fruits from './components/Druits'
+import Employees from './components/Employees'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,8 @@ function App() {
       <hr />
       <h1>Fruits List</h1>
       <Fruits />
+      <hr />
+      <Employees />
     </div>
   )
 }
